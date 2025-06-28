@@ -1,0 +1,12 @@
+{% extends 'Login_form.html'%} {%block
+head%}<title>Login_Form</title>{%endblock%} {%block body%}
+<div class="contain">
+  <h1>Update Task</h1>
+
+  <form action="/update/{{task.id}}" method="post">
+    <input type="text" name="content" id="content" value="{{task.content}}" />
+    <input type="submit" value="Update" />
+  </form>
+</div>
+
+{%endblock%}
