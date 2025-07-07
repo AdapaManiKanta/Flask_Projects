@@ -1,0 +1,118 @@
+anyio==4.9.0
+argon2-cffi==25.1.0
+argon2-cffi-bindings==21.2.0
+arrow==1.3.0
+asttokens==3.0.0
+async-lru==2.0.5
+attrs==25.3.0
+babel==2.17.0
+beautifulsoup4==4.13.4
+bleach==6.2.0
+blinker @ file:///C:/b/abs_b1i87khtob/croot/blinker_1737448732095/work
+Bottleneck @ file:///C:/b/abs_816hr2khp1/croot/bottleneck_1731058648110/work
+certifi==2025.6.15
+cffi==1.17.1
+charset-normalizer==3.4.2
+click @ file:///C:/b/abs_42rbjngfys/croot/click_1744271606983/work
+colorama @ file:///C:/Users/dev-admin/perseverance-python-buildout/croot/colorama_1729036581634/work
+comm==0.2.2
+debugpy==1.8.14
+decorator==5.2.1
+defusedxml==0.7.1
+executing==2.2.0
+fastjsonschema==2.21.1
+Flask @ file:///C:/b/abs_a6m37uz578/croot/flask_1737454335662/work
+Flask-Scss==0.5
+Flask-SQLAlchemy==3.1.1
+fqdn==1.5.1
+greenlet @ file:///C:/b/abs_bbl_18a2tm/croot/greenlet_1733860081977/work
+h11==0.16.0
+httpcore==1.0.9
+httpx==0.28.1
+idna==3.10
+ipykernel==6.29.5
+ipython==9.3.0
+ipython_pygments_lexers==1.1.1
+ipywidgets==8.1.7
+isoduration==20.11.0
+itsdangerous @ file:///C:/Users/dev-admin/buildout/croot/itsdangerous_1732929022589/work
+jedi==0.19.2
+Jinja2 @ file:///C:/b/abs_920kup4e6u/croot/jinja2_1741711580669/work
+json5==0.12.0
+jsonpointer==3.0.0
+jsonschema==4.24.0
+jsonschema-specifications==2025.4.1
+jupyter==1.1.1
+jupyter-console==6.6.3
+jupyter-events==0.12.0
+jupyter-lsp==2.2.5
+jupyter_client==8.6.3
+jupyter_core==5.8.1
+jupyter_server==2.16.0
+jupyter_server_terminals==0.5.3
+jupyterlab==4.4.3
+jupyterlab_pygments==0.3.0
+jupyterlab_server==2.27.3
+jupyterlab_widgets==3.0.15
+MarkupSafe @ file:///C:/b/abs_a0ma7ge0jc/croot/markupsafe_1738584052792/work
+matplotlib-inline==0.1.7
+mistune==3.1.3
+mkl-service==2.4.0
+mkl_fft @ file:///C:/Users/dev-admin/mkl/mkl_fft_1730824198951/work
+mkl_random @ file:///C:/Users/dev-admin/mkl/mkl_random_1730824302834/work
+nbclient==0.10.2
+nbconvert==7.16.6
+nbformat==5.10.4
+nest-asyncio==1.6.0
+notebook==7.4.3
+notebook_shim==0.2.4
+numexpr @ file:///C:/Users/dev-admin/buildout/perseverance-python-buildout/croot/numexpr_1731700337214/work
+numpy==2.2.3
+overrides==7.7.0
+packaging==25.0
+pandas @ file:///C:/b/abs_e18w9ay4we/croot/pandas_1732735115740/work/dist/pandas-2.2.3-cp313-cp313-win_amd64.whl#sha256=89153934c68f42239148879a6c0fd8bb5004e767550db26257dc4551ad0414d7
+pandocfilters==1.5.1
+parso==0.8.4
+platformdirs==4.3.8
+prometheus_client==0.22.1
+prompt_toolkit==3.0.51
+psutil==7.0.0
+pure_eval==0.2.3
+pycparser==2.22
+Pygments==2.19.2
+pyScss==1.4.0
+python-dateutil @ file:///C:/Users/dev-admin/perseverance-python-buildout/croot/python-dateutil_1729038406576/work
+python-json-logger==3.3.0
+pytz @ file:///C:/Users/dev-admin/perseverance-python-buildout/croot/pytz_1729039375330/work
+pywin32==310
+pywinpty==2.0.15
+PyYAML==6.0.2
+pyzmq==27.0.0
+referencing==0.36.2
+requests==2.32.4
+rfc3339-validator==0.1.4
+rfc3986-validator==0.1.1
+rpds-py==0.25.1
+Send2Trash==1.8.3
+setuptools==72.1.0
+six @ file:///C:/b/abs_149wuyuo1o/croot/six_1744271521515/work
+sniffio==1.3.1
+soupsieve==2.7
+SQLAlchemy @ file:///C:/b/abs_275ybuj8n_/croot/sqlalchemy_1745854539419/work
+stack-data==0.6.3
+terminado==0.18.1
+tinycss2==1.4.0
+tornado==6.5.1
+traitlets==5.14.3
+types-python-dateutil==2.9.0.20250516
+typing_extensions @ file:///C:/b/abs_0ffjxtihug/croot/typing_extensions_1734714875646/work
+tzdata @ file:///croot/python-tzdata_1746123641790/work
+uri-template==1.3.0
+urllib3==2.5.0
+wcwidth==0.2.13
+webcolors==24.11.1
+webencodings==0.5.1
+websocket-client==1.8.0
+Werkzeug @ file:///C:/b/abs_c7bupijx2_/croot/werkzeug_1737448709012/work
+wheel==0.45.1
+widgetsnbextension==4.0.14

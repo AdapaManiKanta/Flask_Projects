@@ -1,0 +1,26 @@
+{% extends 'base.html' %} {% block body %}
+<h1 class="my-4 text-center">Welcome to Insta-News</h1>
+
+<div class="row">
+  {% for article in articles %}
+  <div class="col-md-6">
+    <div class="card mb-4 news-article">
+      {% if article.urlToImage %}
+      <img
+        src="{{ article.urlToImage }}"
+        alt="News image"
+        class="card-img-top"
+      />
+      {% endif %}
+
+      <div class="card-body">
+        <h5 class="card-title">
+          <a href="{{ article.url }}" target="_blank">{{ article.title }}</a>
+        </h5>
+        <p class="card-text">{{ article.description }}</p>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}
