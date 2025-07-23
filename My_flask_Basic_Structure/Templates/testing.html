@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<head>
+  <title>Home Page</title>
+</head>
+<body>
+  <h1>Home Page</h1>
+  {% for i in range(10+1) %}
+    {% if i%2==0 %}
+      <p>{{i}}</p>
+    {%endif%}
+  {% endfor%}
+  <h1>Displaying Some List Content</h1>
+  {% for i in content %}
+      <p>{{i}}</p>
+  {% endfor%}
+</body>
+</html>
