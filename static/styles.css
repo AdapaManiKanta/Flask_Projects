@@ -1,26 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #f4d0f7;
+}
+
 body {
-  background-color: rgb(0, 0, 0);
+  background-image: url("https://images.pexels.com/photos/1097456/pexels-photo-1097456.jpeg");
+  background-attachment: fixed;
+  background-size: 100%;
+  background-position: center left;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: #333;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
-  margin: 0;
+  height: 110vh;
+  margin: 0 auto;
   text-align: center;
+  filter: drop-shadow(10px 15px 20px cyan);
 }
 
-header {
+.welcome-section {
+  margin-top: 130px;
+  width: 100vw;
+  height: 100%;
+  font-family: cursive;
+  background-image: radial-gradient(#9fe9ee, rgba(33, 35, 34, 0.9137254902));
+  font-size: 2rem;
+  padding: 40px;
+  filter: box-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+}
+
+.header_nav {
   width: 100%;
-  background-color: #ffffff;
+  text-decoration: none;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #3f3e3e;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 0px 20px;
 }
-header h1 {
+.header h1 {
   margin: 0;
   padding: 10px;
   font-size: 2.5rem;
-  color: #333;
+  color: #f4d0f7;
 }
 
 main {
@@ -32,7 +65,7 @@ main {
 }
 
 .container {
-  background-color: #ffffff;
+  background-color: #3f3e3e;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 30px;
@@ -42,12 +75,12 @@ main {
 }
 .container h1 {
   font-size: 2.5rem;
-  color: #333;
+  color: #f4d0f7;
   margin-bottom: 20px;
 }
 .container p {
   font-size: 18px;
-  color: #666;
+  color: rgba(112, 242, 229, 0.9137254902);
   margin-bottom: 20px;
 }
 .container .input-field {
@@ -70,7 +103,7 @@ main {
   border-radius: 4px;
   font-size: 1rem;
   cursor: pointer;
-  transition: rgb(0, 0, 0) 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 .container .btn.btn-login {
   background-color: #007bff;
@@ -92,4 +125,116 @@ main {
 }
 .container .btn.btn-logout:hover {
   background-color: #0056b3;
-}/*# sourceMappingURL=Styles.css.map */
+}
+
+.mar {
+  background-image: url("https://tse1.mm.bing.net/th/id/OIP.8s1-Z6rmH-SLLa44sMGaEAHaEK?pid=Api&P=0&h=180");
+  background-position: auto;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+}
+
+.btn-cv {
+  color: rgb(155, 236, 238);
+  background-color: rgb(0, 0, 0);
+  padding: 5px;
+}
+.btn-cv:hover {
+  color: black;
+  background-color: #0056b3;
+}
+
+.about {
+  height: 150vh;
+  width: 100vw;
+  margin: 0px auto;
+  padding: 70px;
+  color: white;
+  background-image: url("https://images.unsplash.com/photo-1555642303-4b8db972bacf?q=80&w=1176&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  font-family: "Times New Roman", Times, serif;
+  margin-top: 40px;
+}
+
+.box-1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.skill-box {
+  width: 35vw;
+  height: 30vh;
+  background-color: #2a2a2a;
+  padding: 2vmax;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px cyan;
+  text-align: center;
+}
+.skill-box:hover {
+  color: black;
+  background-color: rgba(202, 202, 202, 0.312);
+}
+.skill-box h2 {
+  color: #70f2e5;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.skill-box .box {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.skill-box .box p {
+  margin: 0;
+  font-size: 1rem;
+  color: white;
+}
+
+.left {
+  text-align: left;
+}
+
+.back-ground {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("https://images.pexels.com/photos/4157621/pexels-photo-4157621.jpeg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.edu-box {
+  width: 35vw;
+  height: 30vh;
+  color: black;
+  padding: 2vmax;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgb(167, 169, 169);
+}
+.edu-box:hover {
+  color: black;
+  background-color: rgba(202, 202, 202, 0.312);
+}
+.edu-box .txt-in {
+  padding-left: 100px;
+  text-align: left;
+}
+
+.footer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  bottom: 0;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.729);
+  color: white;
+}/*# sourceMappingURL=styles.css.map */

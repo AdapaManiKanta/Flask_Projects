@@ -1,8 +1,184 @@
-{% extends 'base.html' %} {%block body%}
-<div class="container">
-  <h1>Welcome,{{username}}</h1>
-  <p>Welcome to your Dashboard</p>
-  <a href="{{url_for('logout')}}" class="btn btn-logout">Logout</a>
-</div>
+{% extends 'base.html' %} {% block body %}
+<center>
+  <section class="welcome-section">
+    <img
+      src="{{ url_for('static', filename='images/IMG_20240725_164429_153.jpg') }}"
+      alt="image"
+      width="200"
+      height="200"
+      style="border-radius: 50%"
+    />
+    <h1 class="txt-bg" style="color: black; font-size: 2.5rem">{{username}}</h1>
+    <h3 class="txt-bg" style="color: rgb(87, 116, 126)">
+      Data Scientist &amp; Full Stack Developer
+    </h3>
+    <p style="font-size: 1.5rem; color: white">
+      Passionate about creating innovative Solutions and <br />building Amazing
+      AI/ML Web Applications
+    </p>
 
+    <input
+      style="
+        color: rgb(155, 236, 238);
+        background-color: rgb(0, 0, 0);
+        padding: 5px;
+      "
+      type="submit"
+      value="View My Work"
+    />
+    <button class="btn-cv">
+      <i class="fa-solid fa-download"></i>&nbsp;&nbsp; Download
+    </button>
+    <br />
+    <button class="btn-cv">
+      <a href="https://www.instagram.com/mani_roy__143_/">
+        <i class="fa-brands fa-square-instagram"></i
+      ></a>
+    </button>
+    <button class="btn-cv">
+      <i class="fa-brands fa-github"></i><a href=""></a>
+    </button>
+    <button class="btn-cv">
+      <i class="fa-brands fa-linkedin"></i><a href=""></a>
+    </button>
+
+    <br /><br /><br />
+    <a href="{{url_for('logout')}}" class="btn btn-logout" style="color: red"
+      >Logout</a
+    >
+  </section>
+</center>
+{% endblock %} {% block About %}
+<section class="about">
+  <h1 id="About" style="font-size: 3rem">About Me</h1>
+  <center>
+    <br /><br />
+    <p>Passionate BTech student with a love for technology and innovation</p>
+  </center>
+  <br /><br />
+  <h2 class="left">Hello! I'm ManiKanta</h2>
+  <br /><br />
+  <div class="left">
+    <p>
+      I'm a dedicated BTech student with a passion for software development and
+      emerging technologies. My journey in computer science has been driven by
+      curiosity and a desire to create meaningful solutions.
+    </p>
+    <br />
+    <p>
+      I specialize in full-stack web development, with experience in modern
+      frameworks and technologies. I enjoy working on projects that challenge me
+      to learn new skills and push the boundaries of what's possible.
+    </p>
+    <br />
+    <p>
+      When I'm not coding, you can find me exploring new technologies,
+      contributing to open-source projects, or working on personal projects that
+      solve real-world problems.
+    </p>
+    <br />
+  </div>
+
+  <div class="box-1">
+    <div class="skill-box">
+      <h2><i class="fa-solid fa-globe"></i> Frontend</h2>
+      <div class="box">
+        <p>Html</p>
+        <p>Css</p>
+        <p>React.js</p>
+        <p>Bootstrap</p>
+      </div>
+    </div>
+
+    <div class="skill-box">
+      <h2><i class="fa-solid fa-server"></i> Backend</h2>
+      <div class="box">
+        <p>Flask</p>
+        <p>Mysql</p>
+        <p>SQLAlchemy</p>
+        <p>Python</p>
+      </div>
+    </div>
+
+    <div class="skill-box">
+      <h2><i class="fa-solid fa-screwdriver-wrench"></i> Tools</h2>
+      <div class="box">
+        <p>Git &amp; Github</p>
+        <p>Cloud</p>
+        <p>Vs Code</p>
+        <p>Anaconda</p>
+      </div>
+    </div>
+
+    <div class="skill-box">
+      <h2><i class="fa-brands fa-python"></i> Data Scientist</h2>
+      <div class="box">
+        <p>Data Analyst</p>
+        <p>Python</p>
+        <p>Machine Learning</p>
+        <p>Artificial Intelligence</p>
+        <p>Deep Learning</p>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %} {% block study %}
+<section id="study" class="back-ground">
+  <div class="">
+    <h1 style="color: black; font-size: 3rem; align-content: center">
+      Education
+    </h1>
+
+    <div class="edu-box">
+      <h1 class="left" style="color: rgb(255, 14, 14)">Intermediate (MPC):-</h1>
+      <p style="color: rgb(50, 50, 50)" class="txt-in">
+        Board of Intermediate Education, Andhra Pradesh
+        <br /><b style="color: black">2020 - 2023</b><br />
+        <i style="color: rgb(50, 50, 50)"
+          >Completed with <b style="color: rgb(120, 242, 120)">74%</b> marks
+          <b><i style="color: rgb(50, 50, 50)">Subjects:</i></b> Mathematics,
+          Physics, Chemistry</i
+        >
+      </p>
+    </div>
+    <div class="edu-box">
+      <h1 class="left" style="color: rgb(255, 14, 14)">
+        High School (10th Grade):-
+      </h1>
+      <p style="color: rgb(50, 50, 50)" class="txt-in">
+        Sri Sidhartha Shcool, Andhra Pradesh <br />2018 - 2019<b></b>
+        <br />Graduated with a
+        <b><i style="color: rgb(120, 242, 120)">10/10 GPA</i></b>
+      </p>
+    </div>
+    <div class="edu-box">
+      <h1 class="left" style="color: rgb(255, 14, 14)">
+        Bachelor of Technology in Computer Science and Engineering:-
+      </h1>
+      <p class="txt-in"><em  style="color: rgb(50, 50, 50);"><b style="color: black;">College Name:</b> St Martins EngineeringCollege </em></b> 
+      <br>
+      <i  style="color: rgb(50, 50, 50);">Academic Year 2023 - 2027 </i>
+       <p style="color: rgb(50, 50, 50);"><br><b style="color: rgb(120, 242, 120)
+      ;">CGPA:-8.3</b>
+       Currently pursuing foundational and advanced coursework in computer
+      science, with emphasis on programming, data structures, and system design.</p></p>
+    </div>
+  </div>
+</section>
 {%endblock%}
+{%block footer%}    <footer id="contact" class="footer">
+      <a
+        href="#"
+        style="
+          padding: 20px;
+          width: 100px;
+          height: 25px;
+          background-color: red;
+          color: black;
+          border-radius: 50px;
+        "
+        >Go-Up</a
+      >
+      Contact:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <mail>manikanta.adapa15@gmail.com</mail>
+    </footer>{%endblock%}

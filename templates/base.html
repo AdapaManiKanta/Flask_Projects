@@ -3,14 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Flask_Authentication</title>
+    <title>AdapaManiKanta</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
     <link
       rel="stylesheet"
       href="{{ url_for('static', filename='styles.css') }}"
     />
   </head>
   <body>
-    <header><h1>Flask_Authentication</h1></header>
-    {%block body%}{%endblock%}
+    <header class="header">
+      <h1 class="gradient">...MANI_ROY_PORTFOLIO...</h1>
+      <hr />
+      <section class="header_nav">
+        <a href="#/">Home</a>
+        <a href="#About">About</a>
+        <a href="#study">Education</a>
+        <a href="">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="{{url_for('logout')}}" class="btn btn-logout">Logout</a>
+      </section>
+    </header>
+
+    {%block body%}{%endblock%} {% block About %} {%endblock%}{%block study%}
+    {%endblock%} {%block footer%}{%endblock%}
   </body>
 </html>

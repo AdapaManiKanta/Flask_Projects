@@ -1,40 +1,46 @@
 {%extends 'base.html'%} {%block body%}
 
 <div class="container">
-  <h1>Welcome</h1>
-  <legend>
-    <fieldset>
-      Login
-      <form id="auth-form" action="{{url_for('login')}}" method="POST">
-        <input
-          type="text"
-          name="username"
-          placeholder="username"
-          class="input-field"
-        />
-        <br />
-        <input
-          type="password"
-          name="password"
-          placeholder="password"
-          class="input-field"
-        />
-        <br />
-        <input
-          type="submit"
-          value="Login"
-          class="btn btn-login"
-          onclick="setActionForm('login')"
-        /><br />
-        <input
-          type="button"
-          value="Register"
-          class="btn btn-register"
-          onclick="setActionForm('register')"
-        /><br />
-      </form>
-    </fieldset>
-  </legend>
+  <h1></h1>
+  <br /><br /><br /><br /><br /><br />
+  <fieldset>
+    <legend>Login / Register</legend>
+    <img
+      src="https://images.pexels.com/photos/1097456/pexels-photo-1097456.jpeg"
+      alt=""
+      height="100%"
+      width="100%"
+      style="border-radius: 100px"
+    />
+    <form id="auth-form" action="{{url_for('login')}}" method="POST">
+      <input
+        type="text"
+        name="username"
+        placeholder="username"
+        class="input-field"
+      />
+      <br />
+      <input
+        type="password"
+        name="password"
+        placeholder="password"
+        class="input-field"
+      />
+      <br />
+      <input
+        type="submit"
+        value="Login"
+        class="btn btn-login"
+        onclick="setActionForm('login')"
+      /><br />
+      <input
+        type="button"
+        value="Register"
+        class="btn btn-register"
+        onclick="setActionForm('register')"
+      /><br />
+    </form>
+  </fieldset>
 </div>
 
 <script>
