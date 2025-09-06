@@ -3,12 +3,14 @@
   <section class="welcome-section">
     <img
       src="{{ url_for('static', filename='images/IMG_20240725_164429_153.jpg') }}"
-      alt="image"
+      alt="avatar"
       width="200"
       height="200"
-      style="border-radius: 50%"
+      style="border-radius: 50%; max-width: 100%; height: auto"
     />
-    <h1 class="txt-bg" style="color: black; font-size: 2.5rem">{{username}}</h1>
+    <h1 class="txt-bg" style="color: black; font-size: 2.5rem">
+      {{ username }}
+    </h1>
     <h3 class="txt-bg" style="color: rgb(87, 116, 126)">
       Data Scientist &amp; Full Stack Developer
     </h3>
@@ -17,35 +19,45 @@
       AI/ML Web Applications
     </p>
 
-    <input
+    <button
       style="
         color: rgb(155, 236, 238);
         background-color: rgb(0, 0, 0);
         padding: 5px;
       "
-      type="submit"
-      value="View My Work"
-    />
+    >
+      View My Work
+    </button>
+
     <button class="btn-cv">
       <i class="fa-solid fa-download"></i>&nbsp;&nbsp; Download
     </button>
-    <br />
-    <button class="btn-cv">
-      <a href="https://www.instagram.com/mani_roy__143_/">
-        <i class="fa-brands fa-square-instagram"></i
-      ></a>
-    </button>
-    <button class="btn-cv">
-      <i class="fa-brands fa-github"></i><a href=""></a>
-    </button>
-    <button class="btn-cv">
-      <i class="fa-brands fa-linkedin"></i><a href=""></a>
-    </button>
+
+    <br /><br />
+
+    <a
+      href="https://www.instagram.com/mani_roy__143_/"
+      target="_blank"
+      class="btn-cv"
+    >
+      <i class="fa-brands fa-square-instagram"></i>
+    </a>
+    <a href="https://github.com/yourusername" target="_blank" class="btn-cv">
+      <i class="fa-brands fa-github"></i>
+    </a>
+    <a
+      href="https://www.linkedin.com/in/yourprofile/"
+      target="_blank"
+      class="btn-cv"
+    >
+      <i class="fa-brands fa-linkedin"></i>
+    </a>
 
     <br /><br /><br />
-    <a href="{{url_for('logout')}}" class="btn btn-logout" style="color: red"
-      >Logout</a
-    >
+
+    <a href="{{ url_for('logout') }}" class="btn btn-logout" style="color: red">
+      Logout
+    </a>
   </section>
 </center>
 {% endblock %} {% block About %}
@@ -83,8 +95,8 @@
     <div class="skill-box">
       <h2><i class="fa-solid fa-globe"></i> Frontend</h2>
       <div class="box">
-        <p>Html</p>
-        <p>Css</p>
+        <p>HTML</p>
+        <p>CSS</p>
         <p>React.js</p>
         <p>Bootstrap</p>
       </div>
@@ -94,7 +106,7 @@
       <h2><i class="fa-solid fa-server"></i> Backend</h2>
       <div class="box">
         <p>Flask</p>
-        <p>Mysql</p>
+        <p>MySQL</p>
         <p>SQLAlchemy</p>
         <p>Python</p>
       </div>
@@ -103,9 +115,9 @@
     <div class="skill-box">
       <h2><i class="fa-solid fa-screwdriver-wrench"></i> Tools</h2>
       <div class="box">
-        <p>Git &amp; Github</p>
+        <p>Git &amp; GitHub</p>
         <p>Cloud</p>
-        <p>Vs Code</p>
+        <p>VS Code</p>
         <p>Anaconda</p>
       </div>
     </div>
@@ -113,7 +125,7 @@
     <div class="skill-box">
       <h2><i class="fa-brands fa-python"></i> Data Scientist</h2>
       <div class="box">
-        <p>Data Analyst</p>
+        <p>Data Analysis</p>
         <p>Python</p>
         <p>Machine Learning</p>
         <p>Artificial Intelligence</p>
@@ -124,61 +136,72 @@
 </section>
 {% endblock %} {% block study %}
 <section id="study" class="back-ground">
-  <div class="">
-    <h1 style="color: black; font-size: 3rem; align-content: center">
-      Education
-    </h1>
+  <div>
+    <h1 style="color: black; font-size: 3rem; text-align: center">Education</h1>
 
     <div class="edu-box">
       <h1 class="left" style="color: rgb(255, 14, 14)">Intermediate (MPC):-</h1>
       <p style="color: rgb(50, 50, 50)" class="txt-in">
         Board of Intermediate Education, Andhra Pradesh
         <br /><b style="color: black">2020 - 2023</b><br />
-        <i style="color: rgb(50, 50, 50)"
-          >Completed with <b style="color: rgb(120, 242, 120)">74%</b> marks
-          <b><i style="color: rgb(50, 50, 50)">Subjects:</i></b> Mathematics,
-          Physics, Chemistry</i
-        >
+        <i style="color: rgb(50, 50, 50)">
+          Completed with
+          <b style="color: rgb(120, 242, 120)">74%</b> marks.
+          <b>Subjects:</b> Mathematics, Physics, Chemistry
+        </i>
       </p>
     </div>
+
     <div class="edu-box">
       <h1 class="left" style="color: rgb(255, 14, 14)">
         High School (10th Grade):-
       </h1>
       <p style="color: rgb(50, 50, 50)" class="txt-in">
-        Sri Sidhartha Shcool, Andhra Pradesh <br />2018 - 2019<b></b>
-        <br />Graduated with a
+        Sri Sidhartha School, Andhra Pradesh <br />
+        <b>2018 - 2019</b><br />
+        Graduated with a
         <b><i style="color: rgb(120, 242, 120)">10/10 GPA</i></b>
       </p>
     </div>
+
     <div class="edu-box">
       <h1 class="left" style="color: rgb(255, 14, 14)">
         Bachelor of Technology in Computer Science and Engineering:-
       </h1>
-      <p class="txt-in"><em  style="color: rgb(50, 50, 50);"><b style="color: black;">College Name:</b> St Martins EngineeringCollege </em></b> 
-      <br>
-      <i  style="color: rgb(50, 50, 50);">Academic Year 2023 - 2027 </i>
-       <p style="color: rgb(50, 50, 50);"><br><b style="color: rgb(120, 242, 120)
-      ;">CGPA:-8.3</b>
-       Currently pursuing foundational and advanced coursework in computer
-      science, with emphasis on programming, data structures, and system design.</p></p>
+      <p class="txt-in">
+        <b style="color: black">College Name:</b>
+        <em style="color: rgb(50, 50, 50)">St Martins Engineering College</em
+        ><br />
+        <i style="color: rgb(50, 50, 50)">Academic Year: 2023 - 2027</i
+        ><br /><br />
+        <span style="color: rgb(50, 50, 50)">
+          <b style="color: rgb(120, 242, 120)">CGPA: 8.3</b><br />
+          Currently pursuing foundational and advanced coursework in computer
+          science, with emphasis on programming, data structures, and system
+          design.
+        </span>
+      </p>
     </div>
   </div>
 </section>
-{%endblock%}
-{%block footer%}    <footer id="contact" class="footer">
-      <a
-        href="#"
-        style="
-          padding: 20px;
-          width: 100px;
-          height: 25px;
-          background-color: red;
-          color: black;
-          border-radius: 50px;
-        "
-        >Go-Up</a
-      >
-      Contact:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <mail>manikanta.adapa15@gmail.com</mail>
-    </footer>{%endblock%}
+{% endblock %} {% block footer %}
+<footer id="contact" class="footer">
+  <a
+    href="#"
+    onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+    style="
+      padding: 20px;
+      width: 100px;
+      height: 25px;
+      background-color: red;
+      color: black;
+      border-radius: 50px;
+    "
+  >
+    Go-Up
+  </a>
+  <br />
+  Contact:
+  <a href="mailto:manikanta.adapa15@gmail.com">manikanta.adapa15@gmail.com</a>
+</footer>
+{% endblock %}
